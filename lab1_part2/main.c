@@ -9,7 +9,7 @@ int main()
     int N;
     int n;
 
-    double start, delta, x;
+    double start, end, delta, x;
 
     // виконуємо введення змінної variant
     // При введені недопустимих значень відбувається повторне введення
@@ -24,14 +24,21 @@ int main()
         printf("Enter variant (1 or 2): ");
         scanf("%u", &variant);
     }
+    printf("Enter X1: ");
+    scanf("%lf", &start);
+
+    printf("Enter X2: ");
+    scanf("%lf", &end);
 
     if (variant == 1)
     {
-        printf("Perform Action for var 1\n");
+         printf("Enter N: ");
+        scanf("%d", &N);
     }
     else if (variant == 2)
     {
-        printf("Perform Action for var 2\n");
+        printf("Enter delta: ");
+        scanf("%lf", &delta);
     }
 
     printf("Program finished\n");
